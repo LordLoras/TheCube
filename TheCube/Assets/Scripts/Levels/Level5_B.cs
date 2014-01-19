@@ -18,7 +18,7 @@ public class Level5_B : MonoBehaviour {
 			rigidbody2D.velocity = new Vector2(0f,moveSpeed);
 		}
 	}
-	
+
 	
 	void OnTriggerEnter2D(Collider2D coll)
 	{

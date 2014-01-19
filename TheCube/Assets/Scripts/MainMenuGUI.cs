@@ -8,13 +8,7 @@ public class MainMenuGUI : MonoBehaviour {
 	public float sizeX = 0.5f;
 	int screenX = Screen.width;
 	int screenY = Screen.height;
-	IConfigSource source;
-	// Use this for initialization
-	void Start () {
-		source = new IniConfigSource(Application.dataPath + @"/savefile.ini");
 
-
-	}
 	
 	void OnGUI()
 	{
@@ -23,7 +17,7 @@ public class MainMenuGUI : MonoBehaviour {
 		if(GUI.Button(new Rect(screenX * 0.25f , screenY * 0.25f , screenX * sizeX , screenY * sizeY),"Play"))
 		{
 			//load level select
-			Application.LoadLevel("Level1");
+			Application.LoadLevel("LevelSelect");
 		}
 		if(GUI.Button(new Rect(screenX * 0.25f , screenY * 0.40f , screenX * sizeX , screenY * sizeY),"Options"))
 		{

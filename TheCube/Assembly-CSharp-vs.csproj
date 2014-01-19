@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CheckpointManager.cs" />
+     <Compile Include="Assets\Scripts\LevelSelectGUI.cs" />
      <Compile Include="Assets\Scripts\Levels\Level2.cs" />
      <Compile Include="Assets\Scripts\Levels\Level3.cs" />
      <Compile Include="Assets\Scripts\Levels\Level4.cs" />

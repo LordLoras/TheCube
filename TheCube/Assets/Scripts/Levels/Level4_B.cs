@@ -49,7 +49,7 @@ public class Level4_B : MonoBehaviour {
 			gameObject.name = "Orange";
 			renderer.material.color = new Color(0.945f,0.53f,0f,1f);
 		}
-		yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds(1f);
 		shiftColor = true;
 	}
 }

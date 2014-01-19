@@ -31,6 +31,13 @@ public class PlayerScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		#region temp random events
+		if(Input.GetKey(KeyCode.F1))
+		{
+			transform.position = StartPos.transform.position;
+		}
+		#endregion
+
 		#region player_movement
 		bool jump = Input.GetButtonDown("Jump");
 		if(jump && grounded)
@@ -146,6 +153,26 @@ public class PlayerScript : MonoBehaviour {
 		{
 			transform.position = StartPos.transform.position;
 		}
+
+		#region EXPERIMENTAL REMOVE ON FAILURE
+		if(coll.collider.name == "Black" && PlayerColor != "Black")
+		{
+			transform.position = StartPos.transform.position;
+		}
+		if(coll.collider.name == "White" && PlayerColor != "White")
+		{
+			transform.position = StartPos.transform.position;
+		}
+		if(coll.collider.name == "Blue" && PlayerColor != "Blue")
+		{
+			transform.position = StartPos.transform.position;
+		}
+		if(coll.collider.name == "Orange" && PlayerColor != "Orange")
+		{
+			transform.position = StartPos.transform.position;
+		}
+		#endregion
+
 	}
 	#endregion
 }
